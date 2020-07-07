@@ -55,6 +55,8 @@ class CurlFactory implements CurlFactoryInterface
             : curl_init();
         curl_setopt_array($easy->handle, $conf);
 
+        var_dump($conf);
+
         return $easy;
     }
 
